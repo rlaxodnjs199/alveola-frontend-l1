@@ -11,8 +11,7 @@ import { changeLanguage } from 'app/store/i18nSlice';
 
 const languages = [
   { id: 'en', title: 'English', flag: 'us' },
-  { id: 'tr', title: 'Turkish', flag: 'tr' },
-  { id: 'ar', title: 'Arabic', flag: 'sa' },
+  { id: 'kr', title: 'Korean', flag: 'kr' },
 ];
 
 function LanguageSwitcher(props) {
@@ -46,7 +45,10 @@ function LanguageSwitcher(props) {
           alt={currentLanguage.title}
         />
 
-        <Typography className="mx-4 font-semibold uppercase" color="textSecondary">
+        <Typography
+          className="mx-4 font-semibold uppercase"
+          color="textSecondary"
+        >
           {currentLanguage.id}
         </Typography>
       </Button>
