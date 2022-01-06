@@ -1,10 +1,11 @@
 import { Navigate } from 'react-router-dom';
 import FuseUtils from '@fuse/utils';
-import ExampleConfig from 'app/main/example/ExampleConfig';
+import DashboardConfig from 'app/main/dashboard/DashboardConfig';
+import FileManagerConfig from 'app/main/file-manager/FileManagerConfig';
 import FuseLoading from '@fuse/core/FuseLoading';
 import Error404Page from 'app/main/404/Error404Page';
 
-const routeConfigs = [ExampleConfig];
+const routeConfigs = [DashboardConfig, FileManagerConfig];
 
 const routes = [
   // if you want to make whole app auth protected by default change defaultAuth for example:
@@ -13,7 +14,7 @@ const routes = [
   ...FuseUtils.generateRoutesFromConfigs(routeConfigs, null),
   {
     path: '/',
-    element: <Navigate to="example" />,
+    element: <Navigate to="dashboard" />,
   },
   {
     path: 'loading',

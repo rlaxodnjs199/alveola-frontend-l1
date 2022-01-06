@@ -1,12 +1,12 @@
 import i18next from 'i18next';
-import Example from './Example';
+import Dashboard from './Dashboard';
 import en from './i18n/en';
 import kr from './i18n/kr';
 
-i18next.addResourceBundle('en', 'examplePage', en);
-i18next.addResourceBundle('kr', 'examplePage', kr);
+i18next.addResourceBundle('en', 'dashboardPage', en);
+i18next.addResourceBundle('kr', 'dashboardPage', kr);
 
-const ExampleConfig = {
+const DashboardConfig = {
   settings: {
     layout: {
       config: {},
@@ -14,13 +14,13 @@ const ExampleConfig = {
   },
   routes: [
     {
-      path: 'example',
-      element: <Example />,
+      path: 'dashboard',
+      element: <Dashboard />,
     },
   ],
 };
 
-export default ExampleConfig;
+export default DashboardConfig;
 
 /**
  * Lazy load Example

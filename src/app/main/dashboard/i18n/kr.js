@@ -1,5 +1,5 @@
 const locale = {
-  TITLE: '예제 페이지',
+  TITLE: '대시보드 페이지',
 };
 
 export default locale;

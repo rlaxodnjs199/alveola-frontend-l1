@@ -6,10 +6,10 @@ const settingsConfig = {
   customScrollbars: true,
   direction: 'ltr', // rtl, ltr
   theme: {
-    main: 'default',
+    main: 'greyDark',
     navbar: 'greyDark',
-    toolbar: 'mainThemeLight',
-    footer: 'mainThemeDark',
+    toolbar: 'defaultDark',
+    footer: 'defaultDark',
   },
   loginRedirectUrl: '/', // Default redirect url for the logged-in user
 };
