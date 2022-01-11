@@ -14,7 +14,7 @@ const DashboardConfig = {
   },
   routes: [
     {
-      path: 'dashboard',
+      path: 'dashboard/excels',
       element: <Dashboard />,
     },
   ],

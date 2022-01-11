@@ -1,7 +1,7 @@
 const locale = {
   APPLICATIONS: 'Applications',
   DASHBOARD: 'Dashboards',
-  FILEMANAGER: 'File Manager',
+  CTSCANMANAGER: 'CT Scan Manager',
 };
 
 export default locale;

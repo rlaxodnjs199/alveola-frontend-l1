@@ -1,12 +1,10 @@
 import { useState } from 'react';
-import DemoContent from '@fuse/core/DemoContent';
 import { styled } from '@mui/material/styles';
 import FusePageSimple from '@fuse/core/FusePageSimple';
 import { useTranslation } from 'react-i18next';
 import Tab from '@mui/material/Tab';
 import Tabs from '@mui/material/Tabs';
-import CTDataGrid from './components/data-grid/CTDataGrid';
-import ExcelGrid from './components/excel-grid/ExcelGrid';
+import CTDataGrid from './components/CTDataGrid';
 
 const Root = styled(FusePageSimple)({
   '& .FusePageSimple-header': {},
@@ -16,8 +14,8 @@ const Root = styled(FusePageSimple)({
   '& .FusePageSimple-sidebarContent': {},
 });
 
-function DashboardPage(props) {
-  const { t } = useTranslation('dashboardPage');
+function CTScanManagerPage(props) {
+  const { t } = useTranslation('CTScanManagerPage');
 
   const [selectedTab, setSelectedTab] = useState(0);
 
@@ -43,8 +41,8 @@ function DashboardPage(props) {
             scrollButtons={false}
             className="w-full h-64 border-b-1"
           >
-            <Tab className="h-64" label="VidaSheet.xlsx" />
-            <Tab className="h-64" label="QCT_Worksheet.xlsx" />
+            <Tab className="h-64" label="De-Identified" />
+            <Tab className="h-64" label="VIDA-Processed" />
           </Tabs>
         </div>
       }
@@ -52,14 +50,14 @@ function DashboardPage(props) {
         <div className="p-24">
           {selectedTab === 0 && (
             <div>
-              <h3 className="mb-16">VidaSheet.xlsx</h3>
-              <ExcelGrid />
+              <h3 className="mb-16">De-Identified CT scans</h3>
+              <CTDataGrid />
             </div>
           )}
           {selectedTab === 1 && (
             <div>
-              <h3 className="mb-16">QCT_Worksheet.xlsx</h3>
-              <ExcelGrid />
+              <h3 className="mb-16">VIDA-Processed CT scans</h3>
+              <CTDataGrid />
             </div>
           )}
         </div>
@@ -68,4 +66,4 @@ function DashboardPage(props) {
   );
 }
 
-export default DashboardPage;
+export default CTScanManagerPage;
