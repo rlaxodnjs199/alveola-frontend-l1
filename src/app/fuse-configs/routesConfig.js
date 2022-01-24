@@ -4,8 +4,15 @@ import DashboardConfig from 'app/main/dashboard/DashboardConfig';
 import CTScanManagerConfig from 'app/main/CTscan-manager/CTScanManagerConfig';
 import FuseLoading from '@fuse/core/FuseLoading';
 import Error404Page from 'app/main/404/Error404Page';
+import ReportsConfig from 'app/main/reports/ReportsConfig';
+import CTScanUploaderConfig from 'app/main/CTscan-uploader/CTScanUploaderConfig';
 
-const routeConfigs = [DashboardConfig, CTScanManagerConfig];
+const routeConfigs = [
+  DashboardConfig,
+  CTScanManagerConfig,
+  ReportsConfig,
+  CTScanUploaderConfig,
+];
 
 const routes = [
   // if you want to make whole app auth protected by default change defaultAuth for example:
