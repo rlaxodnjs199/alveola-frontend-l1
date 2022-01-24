@@ -1,5 +1,6 @@
 import { styled } from '@mui/styles';
 import FusePageSimple from '@fuse/core/FusePageSimple';
+import FileUploader from './components/FileUploader';
 
 const Root = styled(FusePageSimple)({
   '& .FusePageSimple-header': {},
@@ -17,7 +18,7 @@ function CTScanUploaderPage(props) {
           <h2>CT Scan Uploader</h2>
         </div>
       }
-      content={<div className="p-24">hello uploader</div>}
+      content={<FileUploader />}
     />
   );
 }
