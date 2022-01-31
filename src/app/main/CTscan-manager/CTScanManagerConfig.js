@@ -10,7 +10,7 @@ const CTScanManagerConfig = {
   },
   routes: [
     {
-      path: 'CTscan-manager',
+      path: 'scan-manager',
       element: <CTScanManager />,
     },
   ],

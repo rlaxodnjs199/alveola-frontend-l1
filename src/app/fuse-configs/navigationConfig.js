@@ -39,6 +39,7 @@ const navigationConfig = [
       {
         id: 'CTscanUploader-component',
         title: 'CTscanUploader',
+        translate: 'CTSCANUPLOADER',
         type: 'item',
         icon: 'cloud_upload',
         url: 'scan-uploader',

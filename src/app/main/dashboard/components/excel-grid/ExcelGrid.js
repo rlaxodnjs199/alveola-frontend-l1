@@ -15,7 +15,7 @@ const ExcelGrid = () => {
   return (
     <HotTable
       data={data}
-      height={450}
+      height={800}
       colWidths={[
         150, 214, 140, 127, 103, 126, 192, 99, 100, 100, 100, 110, 100,
       ]}

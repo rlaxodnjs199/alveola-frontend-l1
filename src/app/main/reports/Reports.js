@@ -1,5 +1,6 @@
 import { styled } from '@mui/styles';
 import FusePageSimple from '@fuse/core/FusePageSimple';
+import Slider from './components/Slider';
 
 const Root = styled(FusePageSimple)({
   '& .FusePageSimple-header': {},
@@ -17,7 +18,12 @@ function ReportPage(props) {
           <h2>Reports</h2>
         </div>
       }
-      content={<div className="p-24">hello reports</div>}
+      content={
+        <div className="p-24">
+          hello reports
+          <Slider />
+        </div>
+      }
     />
   );
 }
